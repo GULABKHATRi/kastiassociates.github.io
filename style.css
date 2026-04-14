@@ -807,6 +807,28 @@ h1, h2, h3, h4, h5, h6 {
 
   .hero {
     padding-bottom: 80px;
+    background-attachment: scroll !important;
+  }
+
+  .hero h1 {
+    text-shadow: 0 6px 25px rgba(0,0,0,0.6);
+  }
+
+  .client-logo {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  .service-icon {
+    font-size: 2.2rem !important;
+  }
+
+  .card {
+    padding: 1.8rem 1.2rem !important;
+  }
+
+  .section {
+    padding: 70px 3%;
   }
 
   .hero-grid {
