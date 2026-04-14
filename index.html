@@ -1,25 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KASTI ASSOCIATES</title>
-  <link rel="stylesheet" href="style.css" />
+<title>Kasti Associates - ITR | GST | Food License</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
   <!-- HEADER -->
   <header class="header">
     <div class="logo">
-      <a href="#home">
-        <span>KASTI ASSOCIATES</span>
+      <a href="#home" class="logo-link">
+        <img src="Kasti associates.png" alt="Kasti Associates" class="logo-img">
+        <span class="logo-text">KASTI ASSOCIATES</span>
       </a>
     </div>
 
     <nav class="nav">
       <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#services">Services</a>
+<a href="#services">Services</a>
+      <a href="#clients">Clients</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -31,19 +38,63 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="#home" onclick="toggleMenu()">Home</a>
     <a href="#about" onclick="toggleMenu()">About</a>
-    <a href="#services" onclick="toggleMenu()">Services</a>
+<a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#clients" onclick="toggleMenu()">Clients</a>
     <a href="#reviews" onclick="toggleMenu()">Reviews</a>
     <a href="#contact" onclick="toggleMenu()">Contact</a>
   </div>
 
   <!-- HERO SECTION -->
   <section class="hero" id="home">
-    <h1>ITR Filing | GST Registration | Food License</h1>
-    <p>Fast, Affordable & Trusted Services for Individuals and Businesses</p>
+    <div class="hero-grid">
+      <div class="hero-content">
+        <h1><strong>ITR Filing | GST Registration | Food License</strong></h1>
+        <p>Fast, Affordable & Trusted Services for Individuals and Businesses</p>
+        
+        <div class="itr-deadline">
+          <strong>ITR Filing FY 2025-26 Active</strong><br>
+          <span>Non-Audit: 31 July 2026 | Audit: 30 September 2026 | Company: 31 October 2026</span>
+        </div>
+        
 
-    <div class="hero-buttons">
-      <a class="btn whatsapp" href="https://wa.me/918268756619" target="_blank">WhatsApp Now</a>
-      <a class="btn email" href="mailto:itrkasti@gmail.com">Email Us</a>
+
+<div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">ITR Filed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">150+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" id="heroAverageRating">0.0</span>
+            <span class="stat-label">★ Average Rating</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Services</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <div class="cta-main">
+          <h3>Get Started Today</h3>
+          <div class="contact-highlight">
+            <p><i class="fas fa-phone"></i> +91 9137457610</p>
+            <p><i class="fas fa-envelope"></i> itrkasti@gmail.com</p>
+          </div>
+          <div class="hero-buttons">
+            <a class="btn whatsapp" href="https://wa.me/9137457610?text=Hi%2C%20I%20need%20help%20with%20ITR%20Filing%20or%20GST" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> WhatsApp Chat
+            </a>
+            <a class="btn secondary" href="mailto:itrkasti@gmail.com?subject=ITR/GST%20Inquiry&body=Hi%20Team%2C%0A%0AI%20need%20assistance%20with..." target="_blank" rel="noopener">
+              <i class="fas fa-envelope"></i> Send Email
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -63,47 +114,92 @@
 
     <div class="service-cards">
 
-      <div class="card">
+<div class="card">
+        <i class="fas fa-file-invoice-dollar service-icon"></i>
         <h3>ITR Filing</h3>
         <p>File your Income Tax Return quickly and accurately.</p>
       </div>
 
-      <div class="card">
+<div class="card">
+        <i class="fas fa-certificate service-icon"></i>
         <h3>GST Registration</h3>
         <p>Complete GST registration for business and startups.</p>
       </div>
 
-      <div class="card">
+<div class="card">
+        <i class="fas fa-file-alt service-icon"></i>
         <h3>GST Return Filing</h3>
         <p>Monthly/Quarterly GST return filing with compliance support.</p>
       </div>
 
-      <div class="card">
+<div class="card">
+        <i class="fas fa-utensils service-icon"></i>
         <h3>Food License (FSSAI)</h3>
         <p>FSSAI registration and renewal for food businesses.</p>
       </div>
 
-      <div class="card">
+<div class="card">
+        <i class="fas fa-id-card service-icon"></i>
         <h3>PAN / TAN Services</h3>
         <p>Apply for PAN, TAN and corrections quickly.</p>
       </div>
 
-      <div class="card">
+<div class="card">
+        <i class="fas fa-handshake service-icon"></i>
         <h3>Business Consultation</h3>
         <p>Guidance for small businesses and startups.</p>
       </div>
 
-      <div class="card">
+<div class="card">
+        <i class="fas fa-file-contract service-icon"></i>
         <h3>Rent Agreement</h3>
         <p>Professional rent agreement drafting and registration services.</p>
       </div>
 
+      <div class="card">
+        <i class="fas fa-building service-icon"></i>
+        <h3>ROC Filing</h3>
+        <p>Company incorporation, annual returns, ROC compliance filings.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-users service-icon"></i>
+        <h3>ROF - Register of Firms</h3>
+        <p>Partnership firm registration and legal updates.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section class="section clients" id="clients">
+    <h2>Our Valued Clients</h2>
+    <p>Trusted by leading businesses across Navi Mumbai and beyond</p>
+    
+    <div class="clients-grid">
+      <div class="client-card">
+        <img src="DIVINE DAZLE COSMETIC.jpeg" alt="Divine Dazle Cosmetic" class="client-logo">
+        <h4>Divine Dazle Cosmetic</h4>
+      </div>
+      <div class="client-card">
+        <img src="MEERA THE LADIES WEAR.jpeg" alt="Meera The Ladies Wear" class="client-logo">
+        <h4>Meera The Ladies Wear</h4>
+      </div>
+      <div class="client-card">
+        <img src="PANDHARPURI CHAI AIROLI BRANCH.jpg" alt="Pandharpuri Chai Airoli Branch" class="client-logo">
+        <h4>Pandharpuri Chai Airoli Branch</h4>
+      </div>
+      <div class="client-card">
+        <img src="PASHVI ENTERPRISE .jpeg" alt="Pashvi Enterprise" class="client-logo">
+        <h4>Pashvi Enterprise</h4>
+      </div>
     </div>
   </section>
 
   <!-- REVIEWS & RATINGS -->
   <section class="section reviews" id="reviews">
     <h2>Client Reviews & Ratings</h2>
+    <p class="review-subtitle">Trusted by individuals, traders, and business owners across Navi Mumbai</p>
 
     <!-- Review Form -->
     <div class="review-form-container">
@@ -148,8 +244,8 @@
       <p><strong>Address:</strong> Rajasthan Society Sector-6 Airoli Navi Mumbai 400708</p>
 
       <div class="contact-buttons">
-        <a class="btn whatsapp" href="https://wa.me/919137457610" target="_blank">Chat on WhatsApp</a>
-        <a class="btn email" href="mailto:itrkasti@gmail.com">Send Email</a>
+        <a class="btn whatsapp" href="https://wa.me/9137457610?text=Hi%2C%20I%20need%20tax%20services" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a class="btn email" href="mailto:itrkasti@gmail.com?subject=Tax%20Inquiry&body=Hello..." target="_blank" rel="noopener">Send Email</a>
       </div>
     </div>
   </section>
