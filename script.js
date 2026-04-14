@@ -1,3 +1,4 @@
+
 function toggleMenu() {
   const menu = document.getElementById("mobileMenu");
 
@@ -7,6 +8,25 @@ function toggleMenu() {
     menu.style.display = "flex";
   }
 }
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^=\"#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    // Close mobile menu if open
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenu.style.display === 'flex') {
+      toggleMenu();
+    }
+  });
+});
 
 // Review Rating System
 let selectedRating = 0;
@@ -100,6 +120,16 @@ function submitReview() {
 function loadReviews() {
   const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
   const reviewsList = document.getElementById('reviewsList');
+  
+  // Update average rating for hero
+  if (reviews.length > 0) {
+    const averageRating = reviews.reduce((sum, review) => sum + parseInt(review.rating), 0) / reviews.length;
+    const heroAvgElement = document.getElementById('heroAverageRating');
+    if (heroAvgElement) {
+      heroAvgElement.textContent = averageRating.toFixed(1);
+      heroAvgElement.dataset.rating = averageRating.toFixed(1);
+    }
+  }
 
   if (reviews.length === 0) {
     reviewsList.innerHTML = '<p class="no-reviews">No reviews yet. Be the first to share your experience!</p>';
